@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('bgforHerobanner-02-01.e4241652.svg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    margin: 0 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.7);
+
+}
+
+.main .forms{
+    display: flex;
+    align-items: center;
+    height: 520px;
+    width: 200%;
+}
+.main .forms1{
+    display: flex;
+    align-items: center;
+    height: 580px;
+    width: 200%;
+}
+
+.main .form{
+    width: 50%;
+    padding: 30px;    
+
+}
+
+.main .form .title{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+    border-radius: 25px;
+}
+.form .input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 8px;
+    border-bottom: 3px solid violet;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-field input:is(:focus, :valid){
+    border-bottom-color: red;
+}
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.8s ease;
+}
+.input-field input:is(:focus, :valid) ~ i{
+    color: indigo;
+}
+.input-field i.icon{
+    left: 0;
+}
+
+.form .checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin: 0 5px -2px 4px;
+    accent-color: #4070f4;
+}
+.form .text{
+    color: white;
+    font-size: 14px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a.text:hover{
+    color: yellow;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: purple;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: blue;
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
+
+.form .login-signup{
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Social icons */
+.social-icons{
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+}
+.social-icons a{
+    color: white;
+}
+.social-icons i:hover{
+    color: dodgerblue;
+}
